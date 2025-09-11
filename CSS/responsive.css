@@ -120,9 +120,7 @@
     #scroll_top{
         padding: 6px;
     }
-    #scroll_top img{
-        width: 50%;
-    }
+   
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -148,4 +146,5 @@
     }
 
 }
+
 
