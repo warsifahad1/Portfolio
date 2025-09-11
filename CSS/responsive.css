@@ -117,6 +117,8 @@
     .address_contact p {
         font-size: 18px;
     }
+    #scroll_top{
+        padding: 6px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -140,4 +142,5 @@
     .ai_image ul li img{
         height: 170px;
     }
+
 }
