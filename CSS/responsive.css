@@ -1,0 +1,143 @@
+@media only screen and (max-width: 992px) {
+    .header_wrapper {
+        display: none;
+    }
+
+    .mobile_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+    .header_wrapper {
+        display: block;
+    }
+
+    .mobile_nav {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner_caption {
+        width: 100%;
+    }
+
+    .caption_h h1 {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .caption_about h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .caption_about p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .corner-wrap img {
+        width: 190px;
+    }
+
+    .download_resume button a {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .download_resume button {
+        padding: 5px 5px;
+    }
+
+    .banner_img {
+        width: 100%;
+    }
+
+    .banner_img img {
+        width: 80%;
+        margin: 20px 0px 20px 0px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .color-blink h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .about_write_section,
+    .skills_left,
+    .contact_wrapper {
+        width: 100%;
+    }
+
+    .default_btn button a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about_growth_section {
+        width: 100%;
+    }
+
+    .about_card,
+    .skills_card,
+    .contact_card {
+        margin: 10px 10px;
+    }
+
+    .skills_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .ai_image ul li {
+        width: 48%;
+    }
+
+    .ai_image ul li img {
+        height: 150px;
+    }
+
+    .footer_wrapper p {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .social_contact ul li a {
+        font-size: 18px;
+    }
+
+    .address_contact p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .about_card,
+    .skills_card,
+    .contact_wrapper {
+        margin: 15px 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .caption_h h1,
+    .caption_about h2,
+    .caption_about h3 {
+        color: skyblue;
+        line-height: normal;
+    }
+
+    .ai_image ul li img{
+        height: 170px;
+    }
+}
