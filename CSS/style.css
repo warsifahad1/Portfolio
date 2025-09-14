@@ -695,10 +695,9 @@ footer {
 #scroll_top img {
     width: 100%;
     height: auto;
-    filter: invert(1);
-    /* Make icon white for dark theme */
   color: white;
 }
+
 
 
 
