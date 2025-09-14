@@ -576,6 +576,7 @@ footer {
   margin: 0px 45px;
   padding: 0px;
   text-decoration: none;
+  line-height: 36px;
   color: blue;
   font-weight: 500;
   font-size: 20px;
@@ -590,7 +591,7 @@ footer {
   margin: 0px 45px;
   padding: 0px;
   text-decoration: none;
-  line-height: 24px;
+  line-height: 36px;
   color: blue;
   font-weight: 500;
   font-size: 20px;
@@ -698,6 +699,7 @@ footer {
     /* Make icon white for dark theme */
   color: white;
 }
+
 
 
 
