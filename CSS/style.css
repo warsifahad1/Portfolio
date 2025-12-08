@@ -273,7 +273,7 @@ footer {
 .banner_wrapper {
   margin: 0px;
   padding: 0px;
-  background: url(../Images/banner_bg_1.jpg) left top no-repeat;
+  background: url(../Images/banner_bg_1_c.jpg) left top no-repeat;
 }
 .page_containar{
   max-width: 1200px;
@@ -697,6 +697,7 @@ footer {
     height: auto;
   color: white;
 }
+
 
 
 
