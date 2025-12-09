@@ -2,253 +2,461 @@
 <html lang="en">
 
 <head>
-    
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Portfolio Website - Showcasing skills, projects, and experience">
+    <title>Portfolio | Fahad Warsi</title>
 
-	<title>Fahad Warsi | Frontend Web Developer Portfolio</title>
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-	<meta name="description" content="I'm Fahad Warsi, a frontend web developer skilled in HTML, CSS, JavaScript, and Bootstrap. I create responsive and modern websites." />
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-	<meta name="keywords" content="Fahad Warsi, web developer, frontend developer, HTML, CSS, JavaScript, Bootstrap, portfolio" />
-
-	<meta name="author" content="Fahad Warsi" />
-
-	<!-- Social Preview -->
-	<meta property="og:title" content="Fahad Warsi | Web Developer Portfolio" />
-	<meta property="og:description" content="Frontend developer skilled in HTML, CSS, JS & Bootstrap." />
-	<meta property="og:url" content="https://warsifahad1.github.io/Portfolio/" />
-	<meta property="og:image" content="your-image-url-here" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/pushy.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/slick.css">
-    <link rel="stylesheet" href="CSS/slick-theme.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!---------Mobile nav------>
-    <div class="mobile_nav">
-        <nav class="pushy pushy-right" data-focus="#first-link">
-            <div class="pushy-content">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">Portfolio</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div class="site-overlay"></div>
-    <div class="mobile_nav">
-        <div class="mob_portfolio_containar"><a href="#"><u>Portfolio</u></a></div>
-        <button class="menu-btn"><span>&#9776;</span></button>
-    </div>
-    <!---------desktop------->
-    <div class="header_wrapper">
-        <div class="header_nav_wrap">
-            <div class="portfolio_containar">
-                <a href="#">Portfolio</a>
-            </div>
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=61577673908810" target="_blank"><img src="Images/facebook.svg" alt=""></a></li>
-                    <li><a href="https://github.com/warsifahad1" target="_blank"><img src="Images/github.svg" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/fahad-warsi-9578a7335/" target="_blank"><img src="Images/linkedin.svg" alt=""></a></li>
-                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="site-overlay"></div>
-    <!-------close header------>
-    <!-------banner- section----->
-    <div class="banner_wrapper">
-        <div class="page_containar">
-            <div class="banner_wrap">
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title fade-in">Hi, I'm <span class="highlight">Fahad Warsi</span></h1>
+                    <p class="hero-tagline fade-in-delay-1">Front-end Web Developer & Creative Problem Solver</p>
+                    <p class="hero-description fade-in-delay-2">I craft beautiful, functional, and user-centered digital
+                        experiences. Passionate about clean code and innovative solutions.</p>
+                    <div class="hero-buttons fade-in-delay-3">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social fade-in-delay-4">
+                        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/warsifahad1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:99warsifahad@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-delay-2">
+                    <div class="image-wrapper">
+                        <img src="Images/Fahad_C.jpg" alt="Profile Picture" class="profile-img">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I'm a passionate developer with a love for creating elegant solutions to
+                        complex problems.</p>
+                    <p>With years of experience in web development, I specialize in building responsive, accessible, and
+                        performant applications. My journey in tech started with curiosity and has evolved into a career
+                        focused on continuous learning and innovation.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or sharing knowledge with the developer community.</p>
+                    <p>As a freelancer, flexibility and clear communication are everything to me. I’ve worked with
+                        startups, small businesses and individual entrepreneurs — helping them launch landing pages,
+                        personal portfolios, and complex interactive experiences.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            <div class="skills-grid">
                 <!---->
-                <div class="corner-wrap">
-                    <img src="Images/Fahad_C.jpg" alt="Example">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and modern HTML standards</p>
                 </div>
                 <!---->
-                <div class="banner_caption">
-                    <div class="caption_h">
-                        <h1>Hi, <br> I am Fahad Warsi</h1>
-                        <div class="caption_about">
-                            <h2>A WEB DEVELOPER</h2>
-                            <h3>Welcome to my Portfolio website.</h3>
-                        </div>
-                        <div class="download_resume">
-                            <button><a href="Images/Fhad_resume.pdf" target="_blank">Download My Resume</a></button>
-                            <div class="color-blink">
-                                <h5>&#128073; Hire me</h5>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Advanced styling, animations, and responsive design</p>
+                </div>
+                <!---->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, modern frameworks, and interactive experiences</p>
+                </div>
+                <!---->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based UI development and state management</p>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/Recent_work_1_C.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://warsifahad1.github.io/Portfolio/" target="_blank"
+                                    aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <!---->
-
-            </div>
-        </div>
-    </div>
-    <!--------close------>
-
-    <!-----------about content----->
-    <div class="about_wrapper" id="about">
-        <div class="page_containar">
-            <div class="about_card">
-                <div class="about_wrap">
-                    <!---->
-                    <div class="about_write_section">
-                        <div class="subtittle">
-                            <h6>about me</h6>
-                        </div>
-                        <div class="about_me">
-                            <h4><u>I'm Web Developer</u></h4>
-                            <p>Hello! My name is <b>Fahad Warsi</b>, and I belong to Bhadohi, Uttar Pradesh, popularly
-                                known
-                                as
-                                the Carpet City near Varanasi. I am pursuing a <b>Diploma in Computer Science &
-                                    Engineering</b>
-                                at Govt. Polytechnic College, Aurai, Bhadohi, and I am currently in my 2nd year. With a
-                                strong
-                                interest in programming, web development, and modern technologies, I aim to build
-                                innovative
-                                solutions and grow as a skilled computer engineer.</p>
-                            <div class="default_btn"><button><a href="#">Read More</a></button></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Portfolio shows clean websites, easy-to-use designs, and strong branding that help clients
+                            grow and succeed. Simple and effective</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
-                    <div class="about_growth_section">
-                        <img src="Images/Growth chart_C.jpg" alt="growth chart">
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/Recent_work_4 _C.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/warsifahad1/Calculator.git" target="_blank"
+                                    aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>Modern design, fast math, works on phone and computer, helps everyone calculate easily</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/recent_work_3_C.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" aria-label="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Website</h3>
+                        <p>Business websites that look professional, load quickly, attract customers, and help
+                            businesses grow online</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTMl 5</span>
+                            <span>CSS3</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-------close ------->
+    </section>
 
-    <!------------my skills content---->
-    <div class="skills_wrapper" id="skills">
-        <div class="page_containar">
-            <div class="skills_card">
-                <div class="skills_wrap">
-                    <!---->
-                    <div class="skills_left">
-                        <div class="subtittle">
-                            <h6>skills</h6>
-                        </div>
-                        <div class="about_my_skills">
-                            <h4><u>WEB DEVELOPER</u></h4>
-                            <p>I am a passionate Web Developer with strong expertise in <b> HTML, CSS, JavaScript, and
-                                    Bootstrap </b>, dedicated to <b> building responsive, user-friendly, and visually
-                                    appealing
-                                    websites </b>. My focus is on creating seamless digital experiences that adapt
-                                across devices
-                                and deliver both functionality and aesthetics. Along with front-end development, I
-                                <b>integrate AI-powered tools and solutions to enhance website performance, personalize
-                                    user interaction</b>, and bring intelligent features into modern web applications.
-                                With a
-                                blend of creativity, technical skills, and innovative thinking, I strive to develop web
-                                projects that are not only efficient but also future-ready.
-                            </p>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h6 class="section-subtitle">What I Offer</h6>
+            <h2 class="section-title">Web Development Plans</h2>
+
+            <div class="pricing-table">
+                <div class="pricing-card-basic">
+                    <div>
+                        <h3>BASIC</h3>
+                        <div class="pricing-table-basic">
+                            <!----->
+                            <div class="card-body">
+                                <p class="price">₹2000</p>
+                                <ul>
+                                    <li>✔ 1-2 Pages Website</li>
+                                    <li>✔ Social Media links</li>
+                                    <li>✔ Gallery, Testinomial</li>
+                                    <li>✔ Responsive Design (Mobile Friendly)</li>
+                                    <li>✔ Contact Form Integration</li>
+                                    <li>✔ <b>4 Days Delivery</b></li>
+                                    <li>✔ Static Website</li>
+                                    <li>✔ SEO Friendly</li>
+                                    <li>✔ Gmail</li>
+                                    <li>✔ 1 month Support</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Basic</a>
+                            </div>
+                            <!----->
+                            <div class="card-body">
+                                <p class="price">₹3500</p>
+                                <ul>
+                                    <li>✔ 1-4 Pages Website</li>
+                                    <li>✔ Social Media links</li>
+                                    <li>✔ Banner Section, Gallery, Testinomial</li>
+                                    <li>✔ Responsive Design (Mobile Friendly)</li>
+                                    <li>✔ Contact Form Integration</li>
+                                    <li>✔ <b>6 Days Delivery</b></li>
+                                    <li>✔ Static Website</li>
+                                    <li>✔ SEO Friendly</li>
+                                    <li>✔ Gmail</li>
+                                    <li>✔ 1 month Support</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Basic</a>
+                            </div>
+                            <!----->
+                            <div class="card-body">
+                                <p class="price">₹5000</p>
+                                <ul>
+                                    <li>✔ 1-6 Pages Website</li>
+                                    <li>✔ Social Media links</li>
+                                    <li>✔ Responsive Design (Mobile Friendly)</li>
+                                    <li>✔ Contact Form Integration</li>
+                                    <li>✔ <b>8 Days Delivery</b></li>
+                                    <li>✔ Static Website</li>
+                                    <li>✔ SEO Friendly</li>
+                                    <li>✔ Gmail</li>
+                                    <li>✔ 1 month Support</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Basic</a>
+                            </div>
                         </div>
                     </div>
-                    <!----->
-                    <div class="skills_right">
-                        <div class="skills_img">
-                            <img src="Images/Skills_1_c.jpg" alt="skills_image">
+                </div>
+
+                <div class="pricing-card-standard">
+                    <h3>STANDARD</h3>
+                    <div class="pricing-table-standard">
+                        <!----->
+                        <div class="card-body">
+                            <p class="price">₹2000</p>
+                            <ul>
+                                <li>✔ 5-8 Pages Website</li>
+                                <li>✔ Fully Responsive Design</li>
+                                <li>✔ Social Media Integration</li>
+                                <li>✔ Basic SEO Optimization</li>
+                                <li>✔ 7 Days Delivery</li>
+                                <li class="disabled">✘ E-commerce Functionality</li>
+                            </ul>
+                            <a href="#contact" class="btn-service primary">Choose Standard</a>
+                        </div>
+                        <!----->
+                        <div class="card-body">
+                            <p class="price">₹2000</p>
+                            <ul>
+                                <li>✔ 5-8 Pages Website</li>
+                                <li>✔ Fully Responsive Design</li>
+                                <li>✔ Social Media Integration</li>
+                                <li>✔ Basic SEO Optimization</li>
+                                <li>✔ 7 Days Delivery</li>
+                                <li class="disabled">✘ E-commerce Functionality</li>
+                            </ul>
+                            <a href="#contact" class="btn-service primary">Choose Standard</a>
+                        </div>
+                        <!---->
+                        <div class="card-body">
+                            <p class="price">₹2000</p>
+                            <ul>
+                                <li>✔ 5-8 Pages Website</li>
+                                <li>✔ Fully Responsive Design</li>
+                                <li>✔ Social Media Integration</li>
+                                <li>✔ Basic SEO Optimization</li>
+                                <li>✔ 7 Days Delivery</li>
+                                <li class="disabled">✘ E-commerce Functionality</li>
+                            </ul>
+                            <a href="#contact" class="btn-service primary">Choose Standard</a>
                         </div>
                     </div>
+                </div>
 
+                <div class="pricing-card-premium">
+                    <div>
+                        <h3>PREMIUM</h3>
+                        <div class="pricing-table-premium">
+                            <!----->
+                            <div class="card-body">
+                                <p class="price">₹2000</p>
+                                <ul>
+                                    <li>✔ 10+ Pages / Custom Features</li>
+                                    <li>✔ Advanced SEO & Analytics</li>
+                                    <li>✔ Admin Dashboard Integration</li>
+                                    <li>✔ E-commerce / Payment Gateway</li>
+                                    <li>✔ Priority Support (1 Month)</li>
+                                    <li>✔ 14 Days Delivery</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Premium</a>
+                            </div>
+                            <!----->
+                            <div class="card-body">
+                                <p class="price">₹2000</p>
+                                <ul>
+                                    <li>✔ 10+ Pages / Custom Features</li>
+                                    <li>✔ Advanced SEO & Analytics</li>
+                                    <li>✔ Admin Dashboard Integration</li>
+                                    <li>✔ E-commerce / Payment Gateway</li>
+                                    <li>✔ Priority Support (1 Month)</li>
+                                    <li>✔ 14 Days Delivery</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Premium</a>
+                            </div>
+                            <!---->
+                            <div class="card-body">
+                                <p class="price">₹2000</p>
+                                <ul>
+                                    <li>✔ 10+ Pages / Custom Features</li>
+                                    <li>✔ Advanced SEO & Analytics</li>
+                                    <li>✔ Admin Dashboard Integration</li>
+                                    <li>✔ E-commerce / Payment Gateway</li>
+                                    <li>✔ Priority Support (1 Month)</li>
+                                    <li>✔ 14 Days Delivery</li>
+                                </ul>
+                                <a href="#contact" class="btn-service">Choose Premium</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-para">
+                    <p>**<b>Want a professional website for your business?</b>
+                        Getting your own stunning, fast, and mobile-friendly website is super easy!
+                        You have two simple options to get started right now:</p>
+
+                    <p>1. Send me an email directly at <b>99warsifahad@gmail.com</b> with your requirements</p>
+                    or
+                    <p>2. Fill out the <b>“Get in Touch”</b> form below and click Submit — I’ll get back to you within
+                        24 hours</p>
+
+                    <p>No obligation, no pressure — just a quick chat about what you need.
+                        Let’s turn your idea into a beautiful website today**</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-----iamge_section-->
-    <div class="image_wrapper">
-        <div class="page_containar">
-            <div class="skills_card">
-                <div class="ai_image">
-                    <ul class="ai_image_wrap">
-                        <li><img src="Images/Ai_1_C.jpg" alt=""></li>
-                        <li><img src="Images/ai_2_C.jpg" alt=""></li>
-                        <li><img src="Images/ai_3_C.jpg" alt=""></li>
-                        <li><img src="Images/ai_4_C.jpg" alt=""></li>
-                    </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you. Send me a message!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>99warsifahad@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Bhadohi, UP, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Fahad Warsi. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.dribble.com" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-------close ------->
-    <div class="contact_wrapper" id="contact">
-        <div class="page_containar">
-            <div class="contact_card">
-                <div class="subtittle">
-                    <h6>Contact us</h6>
+    </footer>
 
-                </div>
-                <div class="social_contact">
-                    <ul>
-                        <li>
-                            <div class="email"><a href="mailto:fahadwarsi463@gmail.com"
-                                    target="_blank">fahadwarsi463@gmail.com</a></div>
-                        </li>
-                        <li>
-                            <div class="fb"><a href="https://www.facebook.com/profile.php?id=61577673908810"
-                                    target="_blank">/fahad-warsi</a></div>
-                        </li>
-                        <li>
-                            <div class="linkedin"><a
-                                    href="https://www.linkedin.com/in/fahad-warsi-9578a7335/" target="_blank">/fahad-warsi</a></div>
-                        </li>
-                        <li>
-                            <div class="github"><a href="https://github.com/warsifahad1" target="_blank">/fahad-warsi</a></div>
-                        </li>
-                    </ul>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-                </div>
-                <div class="address_contact">
-                    <p>Alampur, Bhadohi, UP, India</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------footer contact--------->
-    <div class="footer_wrapper">
-        <div class="page_containar">
-            <p>© All right reserved | Developed By Fahad Warsi</p>
-        </div>
-    </div>
-    <!------close ----->
-
-    <!---button---->
-    <button onclick="scrollToTop()" id="scroll_top"><img src="Images/top_arrow_white.png" alt=""></button>
-    <script>
-        function scrollToTop(){
-            window.scrollTo({top: 0, behavior: "smooth"});
-        };
-    </script>
-
-    <!------script------>
-    <script src="JS/pushy.min.js"></script>
-    <script src="JS/slick.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
-
-
