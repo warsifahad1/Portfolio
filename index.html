@@ -462,7 +462,7 @@
                     <div class="form-group">
                         <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" onclick="sendMail()" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -493,6 +493,16 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "U4Co3BfKdjK5UUiQx",
+      });
+   })();
+</script>
 </body>
 
 </html>

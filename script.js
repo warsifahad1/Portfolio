@@ -409,3 +409,16 @@ window.addEventListener('scroll', throttle(() => {
 // ============================================
 console.log('%c👋 Welcome to my Portfolio!', 'font-size: 20px; font-weight: bold; color: #FF6B9D;');
 console.log('%cFeel free to explore the code and reach out if you have any questions!', 'font-size: 14px; color: #666;');
+// ====================================
+// Send message 
+//=====================================
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value,
+    }
+
+    emailjs.send("service_llsoj8m","template_hccnjsk",parms).then(alert("Email Sent!!"))
+}
