@@ -1274,3 +1274,8 @@ body {
         margin: 0 auto;
     }
 }
+@media (max-width: 480px) {
+    .card-body{
+        margin-top: 20px;
+    }
+}
